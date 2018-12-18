@@ -7,7 +7,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Larashop @yield("title")</title>
+ <title>Uneed @yield("title")</title>
  <link rel="stylesheet" href="{{asset('polished/polished.min.css')}}">
  <link rel="stylesheet" href="{{asset('polished/iconic/css/open-iconic-bootstrap.min.css')}}">
  <style>
@@ -34,17 +34,17 @@ document.documentElement.className.replace('no-js', 'js') +
 </head>
 <body>
  <nav class="navbar navbar-expand p-0">
- <a class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0"
-href="index.html"> Larashop </a>
- <button class="btn btn-link d-block d-md-none" data-toggle="collapse"
+ <a class="navbar-brand text-center col-xs-12 col-md-3 col-lg-2 mr-0 "
+href="index.html"> Uneed </a>
+ <button class="btn btn-link d-block d-md-none " data-toggle="collapse"
 data-target="#sidebar-nav" role="button" >
  <span class="oi oi-menu"></span>
  </button>
 
 <input class="border-dark bg-primary-darkest form-control d-none dmd-block w-50 ml-3 mr-2" type="text" placeholder="Search" arialabel="Search">
-<div class="dropdown d-none d-md-block">
+<div class="dropdown d-none d-md-block nav justify-content-end" >
 @if(\Auth::user())
-<button class="btn btn-link btn-link-primary dropdown-toggle"
+<button class="btn btn-link btn-link-primary dropdown-toggle nav justify-content-end"
 id="navbar-dropdown" data-toggle="dropdown">
 {{Auth::user()->name}}
 </button>
@@ -87,10 +87,6 @@ style="cursor:pointer">Sign Out</button>
 </li>
 </div>
 </ul>
-<div class="pl-3 d-none d-md-block position-fixed"
-style="bottom: 0px">
- <span class="oi oi-cog"></span> Setting
- </div>
  </div>
  <div class="col-lg-10 col-md-9 p-4">
  <div class="row ">
